@@ -12,6 +12,7 @@
 #   s  = N(N + 1) / 2.
 #   s2 = N(N + 1)(2N + 1) / 6.
 # Hence s^2 - s2 = (N^4 / 4) + (N^3 / 6) - (N^2 / 4) - (N / 6).
+# I think there is a more elegent solution, since the result is 2*sum(xn*xm), where 0<n<m<101
 def compute():
 	N = 100
 	s = sum(i for i in range(1, N + 1))
