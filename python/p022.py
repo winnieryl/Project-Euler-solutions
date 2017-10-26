@@ -6,7 +6,8 @@
 # https://github.com/nayuki/Project-Euler-solutions
 # 
 
-
+#one line:
+#print sum((i+1)*sum((ord(j)-ord('A')+1) for j in name) for i,name in enumerate(sorted([name[1:-1] for name in open("./p022_names.txt", 'r').read().split(",")])))
 # We apply straightforward algorithms to sort the names, sum the letter values, and multiply by the position.
 def compute():
 	ans = sum((i + 1) * (ord(c) - ord('A') + 1)
